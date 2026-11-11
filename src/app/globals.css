@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ink: #0B0B0D;
+    --muted: #4F4E55;
+    --teal: #1F8C7F;
+    --teal-hover: #176E64;
+    --teal-subtle: #EBF7F5;
+    --soft: #F4F2EC;
+    --soft-border: #E5E1D6;
+    --surface: #FFFFFF;
+  }
+
+  * {
+    border-color: #E5E1D6;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #0B0B0D;
+    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom styles for checkerboard transparency preview */
+.bg-transparency-grid {
+  background-image: linear-gradient(45deg, #f0f0ee 25%, transparent 25%),
+                    linear-gradient(-45deg, #f0f0ee 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, #f0f0ee 75%),
+                    linear-gradient(-45deg, transparent 75%, #f0f0ee 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+  background-color: #ffffff;
+}
+
+/* Custom range slider styling */
+input[type="range"] {
+  accent-color: #1F8C7F;
+}
