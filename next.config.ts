@@ -1,23 +1,23 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
-  },
-  async rewrites() {
+  reactStrictMode: true,
+  async redirects() {
     return [
       {
+        source: "/webptools",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/WEBPTools",
-        destination: "/webptools",
+        destination: "/",
+        permanent: true,
       },
       {
         source: "/webp-tools",
-        destination: "/webptools",
+        destination: "/",
+        permanent: true,
       },
     ];
   },

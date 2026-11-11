@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowUpRight, Shield, Heart } from "lucide-react";
+import { ArrowUpRight, Shield } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="w-full border-t border-[#E5E1D6] bg-[#F4F2EC] mt-16">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           {/* Main Attribution Line Specified by User */}
           <div className="space-y-1">
@@ -35,19 +35,19 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Anchor Links */}
           <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-[#4F4E55]">
-            <Link href="/webptools" className="hover:text-[#0B0B0D] transition-colors">
-              JPG to WebP
-            </Link>
-            <span>•</span>
             <Link href="/" className="hover:text-[#0B0B0D] transition-colors">
-              Tools Hub
+              Converter
             </Link>
             <span>•</span>
-            <Link href="/pins" className="hover:text-[#0B0B0D] transition-colors">
-              Pinterest Pins Kit
-            </Link>
+            <a href="#why-webp" className="hover:text-[#0B0B0D] transition-colors">
+              Why WebP
+            </a>
+            <span>•</span>
+            <a href="#faq" className="hover:text-[#0B0B0D] transition-colors">
+              FAQ
+            </a>
             <span>•</span>
             <a
               href="https://www.abidmahmud.cv"
