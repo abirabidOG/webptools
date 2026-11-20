@@ -1,0 +1,1 @@
+{"name":"webptools","owner":{"email":"abir.abid.43@gmail.com","name":"Abid Mahmud"},"plugins":[{"description":"Convert JPG, PNG and SVG to optimised WebP from Claude Code. Free, local, no sign-up, nothing uploaded.","name":"webptools","source":"./plugins/webptools","version":"0.1.0"}]}
